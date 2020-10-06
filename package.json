@@ -1,0 +1,26 @@
+{
+  "name": "projecteuler",
+  "version": "1.0.0",
+  "description": "Solution of Project Euler",
+  "main": "problem_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lulyra/projecteuler.git"
+  },
+  "keywords": [
+    "euler",
+    "projecteuler"
+  ],
+  "author": "Luiz Paulo Oliveira Lyra de Miranda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lulyra/projecteuler/issues"
+  },
+  "homepage": "https://github.com/Lulyra/projecteuler#readme",
+  "devDependencies": {
+    "jasmine": "^3.6.1"
+  }
+}
