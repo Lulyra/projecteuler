@@ -18,4 +18,16 @@ describe("problem_1", function () {
       expect(lastDivisor(8, 30)).toEqual(Error("Is not a correct Input"));
     });
   });
+  describe("sumAll", function () {
+    it("number bigger than 1,", function () {
+      expect(sumAll(3)).toEqual(6);
+      expect(sumAll(10)).toEqual(55);
+    });
+    it("number smaller or equal than 1", function () {
+      expect(sumAll(1)).toEqual(Error("Is not a correct Input"));
+      expect(sumAll(0)).toEqual(Error("Is not a correct Input"));
+      expect(sumAll(-10)).toEqual(Error("Is not a correct Input"));
+    });
+  });
+  
 });
