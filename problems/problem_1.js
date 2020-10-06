@@ -15,7 +15,10 @@ function lastDivisor(target, n) {
  * @param {number} target - Any integer bigger than 1
  */
 function sumAll(target) {
-  return 0.5 * target * (target + 1);
+  const condition = !isNaN(target) && target > 1;
+  return condition
+    ? 0.5 * target * (target + 1)
+    : Error("Is not a correct Input");
 }
 /**
  * Sum all Divisible number by n that is bellow Target.
