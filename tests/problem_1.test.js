@@ -54,7 +54,7 @@ describe("problem_1", function () {
   describe("find the sum of all the multiples of 3 or 5", function () {
     it("known solution", function () {
       expect(solution(10)).toEqual(23);
-      expect(solution(20)).toEqual(68);
+      expect(solution(20)).toEqual(78);
     });
   });
 });

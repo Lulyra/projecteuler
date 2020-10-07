@@ -27,7 +27,6 @@ function sumAll(target) {
  */
 function sumAllDivisibleByAndBelow(target, n) {
   const divisor = lastDivisor(target, n);
-  console.log(divisor);
   return divisor && n * sumAll(divisor);
 }
 
@@ -35,11 +34,15 @@ function sumAllDivisibleByAndBelow(target, n) {
  * Find the sum of all the multiples of 3 or 5 below 1000.
  */
 function solution(target) {
-  const divisorBy3 = sumAllDivisibleByAndBelow(target, 3);
-  const divisorBy5 = sumAllDivisibleByAndBelow(target, 5);
-  const divisorBy15 = target >= 15 ? sumAllDivisibleByAndBelow(target, 15) : 0;
+  const newTarget = target - 1;
+  const divisorBy3 = sumAllDivisibleByAndBelow(newTarget, 3);
+  const divisorBy5 = sumAllDivisibleByAndBelow(newTarget, 5);
+  const divisorBy15 =
+    newTarget >= 15 ? sumAllDivisibleByAndBelow(newTarget, 15) : 0;
   return divisorBy3 + divisorBy5 - divisorBy15;
 }
+
+console.log(solution(1000));
 
 exports.lastDivisor = lastDivisor;
 exports.sumAll = sumAll;
