@@ -25,7 +25,11 @@ function sumAll(target) {
  * @param {number} target - Any integer bigger than 1
  * @param {number} n - Any integer bigger than 1
  */
-function sumAllDivisibleByAndBelow() {}
+function sumAllDivisibleByAndBelow(target, n) {
+  const divisor = lastDivisor(target, n);
+  return divisor && n * sumAll(divisor);
+}
 
 exports.lastDivisor = lastDivisor;
 exports.sumAll = sumAll;
+exports.sumAllDivisibleByAndBelow = sumAllDivisibleByAndBelow;
